@@ -3,29 +3,26 @@ properties.load(project.rootProject.file('..\\local.properties').newDataInputStr
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
+        classpath 'com.android.tools.build:gradle:7.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
         google()
     }
 }
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 android {
-    buildFeatures {
-        viewBinding = true
-    }
     signingConfigs {
         'default' {
             storeFile file(properties["SIGNED_STORE_FILE"])
@@ -34,12 +31,13 @@ android {
             keyPassword properties["SIGNED_KEY_PASSWORD"]
         }
     }
-    compileSdkVersion 30
-    buildToolsVersion "31.0.0-rc3"
+    compileSdkVersion 32
+    buildToolsVersion "32.0.0"
+
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 30
+        minSdkVersion 26
+        targetSdkVersion 32
 
         versionName "1.0.0"
         versionCode 100
