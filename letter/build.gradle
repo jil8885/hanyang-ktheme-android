@@ -1,0 +1,54 @@
+Properties properties = new Properties()
+properties.load(project.rootProject.file('..\\local.properties').newDataInputStream())
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    buildFeatures {
+        viewBinding = true
+    }
+    signingConfigs {
+        'default' {
+            storeFile file(properties["SIGNED_STORE_FILE"])
+            storePassword properties["SIGNED_STORE_PASSWORD"]
+            keyAlias properties["SIGNED_KEY_ALIAS"]
+            keyPassword properties["SIGNED_KEY_PASSWORD"]
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "31.0.0-rc3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+
+        versionName "1.0.0"
+        versionCode 100
+        applicationId "com.kakao.talk.theme.hanyang.letter"
+
+        sourceSets {
+            main.res.srcDirs += 'src/main/theme'
+            main.res.srcDirs += 'src/main/theme-adv'
+        }
+        signingConfig signingConfigs.'default'
+    }
+}
