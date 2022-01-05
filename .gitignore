@@ -1,1 +1,12 @@
 local.properties
+letter/.idea/libraries/
+
+normal/.idea/libraries/
+
+normal/.idea/
+
+letter/.idea/
+
+*.apk
+
+hy-bibi/release/
