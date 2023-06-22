@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Header : 메인탭 헤더 타이틀 -->
+    <color name="theme_header_color">#2F557A</color>                            <!--Default-->
+
+    <!-- Section Title : 섹션 헤더 타이틀 -->
+    <color name="theme_section_title_color">#2F557A</color>                     <!--Default-->
+
+    <!-- Title : 이름 -->
+    <color name="theme_title_color">#2F557A</color>                             <!--Default-->
+    <color name="theme_title_pressed_color">#2F557A</color>                     <!--Pressed-->
+
+    <!-- Paragraph : 라스트메세지 -->
+    <color name="theme_paragraph_color">#4F7295</color>                         <!--Default-->
+    <color name="theme_paragraph_pressed_color">#4F7295</color>                 <!--Pressed-->
+
+    <!-- Description : 상태메세지 -->
+    <color name="theme_description_color">#4F7295</color>                       <!--Default-->
+    <color name="theme_description_pressed_color">#4F7295</color>               <!--Pressed-->
+
+    <!-- Feature : 서비스/피처별 컬러 -->
+
+    <!-- Primary : 멜론/선물하기 등 버튼 텍스트 -->
+    <color name="theme_feature_primary_color">#2F557A</color>                   <!--Default-->
+    <color name="theme_feature_primary_pressed_color">#2F557A</color>           <!--Pressed-->
+
+    <!-- Services : Browse 3탭 -->
+    <color name="theme_feature_browse_tab_color">#FFFFFF</color>                <!--Default-->
+    <color name="theme_feature_browse_tab_focused_color">#7B8F9E</color>        <!--Focused-->
+
+
+    <!-- Background -->
+    <!-- 기본 -->
+    <color name="theme_background_color">#FFFFFF</color>
+    <!-- 채팅방 -->
+    <color name="theme_chatroom_background_color">#C2E3FF</color>
+    <!-- 잠금화면 -->
+    <color name="theme_passcode_background_color">#C2E3FF</color>
+
+
+    <!-- Cell Color -->
+
+    <!-- Header : 메인탭 헤더 타이틀 셀 -->
+    <color name="theme_header_cell_color">#2F557A</color>
+
+    <!-- Body : 기본리스트 & 콘텐츠영역 셀 -->
+    <color name="theme_body_cell_color">#FFFFFF</color>
+    <color name="theme_body_cell_pressed_color">#C2E3FF</color>
+    <color name="theme_body_cell_border_color">#000000</color>
+
+    <!-- Body Secondary : 발견 & 더보기 콘텐츠 영역 셀 -->
+    <color name="theme_body_secondary_cell_color">#FFFFFF</color>
+
+    <!-- Tab : 메인탭 탭바 -->
+    <color name="theme_maintab_cell_color">#FFFFFF</color>
+
+    <!-- Tab : 배너 -->
+    <color name="theme_tab_bannerbadge_background_color">#C2E3FF</color>
+
+
+    <!-- Elements Color -->
+
+    <!-- Direct Share BG -->
+    <color name="theme_direct_share_color">#2F557A</color>
+    <color name="theme_direct_share_button_color">#FFFFFF</color>
+    <color name="theme_direct_share_background_color">#C2E3FF</color>
+
+    <!-- Notification Popup/Toast -->
+    <color name="theme_notification_color">#2F557A</color>
+    <color name="theme_notification_background_color">#FFFFFF</color>
+    <color name="theme_notification_background_pressed_color">#C2E3FF</color>
+
+    <!-- Passcode -->
+    <color name="theme_passcode_color">#C2E3FF</color>
+
+    <color name="theme_passcode_keypad_color">#2F557A</color>
+    <color name="theme_passcode_keypad_pressed_color">#2F557A</color>
+    <color name="theme_passcode_keypad_background_color">#FFFFFF</color>
+    <color name="theme_passcode_keypad_pressed_background_color">#C2E3FF</color>
+
+    <color name="theme_passcode_pattern_line_color">#C2E3FF</color>
+
+
+    <!-- Chatroom -->
+
+    <!-- Chat Bubble -->
+
+    <!-- Me -->
+    <color name="theme_chatroom_bubble_me_color">#4D4D4D</color>
+
+    <!-- You -->
+    <color name="theme_chatroom_bubble_you_color">#4D4D4D</color>
+
+    <!-- Chat Unread Count -->
+    <color name="theme_chatroom_unread_count_color">#2F557A</color>
+
+    <!-- Input Bar -->
+    <color name="theme_chatroom_input_bar_color">#000000</color>
+    <color name="theme_chatroom_input_bar_background_color">#FFFFFF</color>
+    <color name="theme_chatroom_input_bar_menu_icon_color">#4F7295</color>
+    <color name="theme_chatroom_input_bar_send_button_color">#2B68E0</color>
+    <color name="theme_chatroom_input_bar_send_icon_color">#FFFFFF</color>
+
+</resources>

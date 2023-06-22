@@ -1,0 +1,52 @@
+Properties properties = new Properties()
+properties.load(project.rootProject.file('..\\local.properties').newDataInputStream())
+
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+android {
+    signingConfigs {
+        'default' {
+            storeFile file(properties["SIGNED_STORE_FILE"])
+            storePassword properties["SIGNED_STORE_PASSWORD"]
+            keyAlias properties["SIGNED_KEY_ALIAS"]
+            keyPassword properties["SIGNED_KEY_PASSWORD"]
+        }
+    }
+    compileSdkVersion 34
+    buildToolsVersion "32.0.0"
+    namespace 'com.kakao.talk.theme.hanyang.bibi'
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 34
+
+        versionName "1.0.0"
+        versionCode 100
+        applicationId "com.kakao.talk.theme.hanyang.bibi"
+
+        sourceSets {
+            main.res.srcDirs += 'src/main/theme'
+            main.res.srcDirs += 'src/main/theme-adv'
+        }
+        signingConfig signingConfigs.'default'
+    }
+}
