@@ -7,7 +7,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath 'com.android.tools.build:gradle:8.9.2'
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21'
     }
 }
@@ -31,16 +31,15 @@ android {
             keyPassword properties["SIGNED_KEY_PASSWORD"]
         }
     }
-    compileSdkVersion 34
-    buildToolsVersion "32.0.0"
+    buildToolsVersion "36.0.0"
     namespace 'com.kakao.talk.theme.hanyang.bibi'
 
     defaultConfig {
         minSdkVersion 26
-        targetSdkVersion 34
-
-        versionName "1.0.0"
-        versionCode 100
+        targetSdkVersion 35
+        compileSdkVersion 35
+        versionName "1.0.1"
+        versionCode 101
         applicationId "com.kakao.talk.theme.hanyang.bibi"
 
         sourceSets {
